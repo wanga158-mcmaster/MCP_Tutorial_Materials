@@ -1,0 +1,109 @@
+﻿go through contents of workshop; start with discussion of programming as well as differences between c++ and python; then, note that we hope students will follow along and to set up environment; third, we'll get started with actually introducing the language, and lastly we'll have challenges for the students to try with their newly learned knowledge
+
+
+don't let the students answer yet, first ask them what does a piece of code do
+
+
+ask them what a piece of code does
+
+
+explain to them a program is like an interface between your computer and the user; programming is the tool that lets the user make the computer accomplish tasks; so programming essentially is just a way to do some task
+
+
+setting up the environment, tell students to pay attention and ask upper years for help if needed
+
+
+sign up for replit
+
+
+talk about ides
+
+
+talk about the tech stack for c++
+
+
+introduce c++
+
+
+necessities of a program: there's two parts. you'll always need input and output, as well as int main
+
+
+int main is the place where the computer starts reading your code. it's where every part of the program is placed, so basically where every step of the program is contained. you basically can't let the computer execute instructions outside of int main. for those who have learned previously about functions, we won't talk about those today. you don't need to know much about how it functions or anything; just know that when we write our instructions, we want to place them inside int main. and this is very imporant: writing a program is basically like giving your computer a plan. our plan needs to be very clear, basic, and understandable so the computer can execute it. our plan is special because our computer only understands a few basic instructions. it's your job to use these basic instructions to produce a smart plan.
+
+
+input and outupt: a very important part of a program's functionality. think about how important communication is in our every day lives; speech and conversations are the cornerstone of human life. the computer also needs some way to talk, between other computers as well as the user. why does every program need an output? because without an output it's equivalent to not running it. but not every program needs input; for example, some programs are designed to find counter cases to mathematical theorems. ask for other examples
+
+
+hello world. let everyone test out their first program in the workshop. don't worry about the line using namespace std; we won't be getting into what that means today. what happens if we try and write it without quotation marks? it doesn't work. so why do we add quotation marks? it tells our computer that we want these words to be some string of characters. we won't be getting into strings much today, but it's important to know that a string can be written as such.
+
+
+a special string tells your console to go to a new line. there's two ways to do it: choose the way you prefer. both are completely fine
+
+
+so where exactly are we seeing the inputs and the outputs of our program? it's in something called the console. you can also call it a terminal, the difference is a little confusing so I won't get into it. in mainstream media, i.e. some movies where some computer programming is done, it's mainly shown through some sort of fancy coloured text animations in a console. I'm pretty sure replit sets up a terminal for you, but in the future, you will have to manage the terminal yourself.
+
+
+complimentary to cout: cin. whereas cout displayed the outputs that you wanted them to display, cin takes in an input that you type in personally through your keyboard. let students try it out! make sure you type in a number. ask them what cin stands for: it's character in, not console in as you might assume. look at what happens: nothing. right now we want to let our program know what to do next
+
+
+one of the main concepts in computer programming is storing some information. going back to the plan analogy, we want to be able to reference some information in our plan. for example, imagine we wanted to open a bottle of water. well, we'd have to know what type of lid the water bottle has. it could have a screw on lid, or maybe it has a little button to open a valve, or any other design. but the point is, in any sort of program, we always want to be able to store useful pieces of information. int stands for integer. we want to store some integer value, like one, two, or three, or eight. think of it like your brain's memory, but instead it's a computer's storage. you can declare the variable name as anything you want, except for a few reserved words the c++ language has, like cin or cout. you also can't name it int, for obvious reasons.
+
+
+now, let's try having our program just spit out the same number we give it to them. it's very simple, but we'll start doing more with this integer later.
+
+
+ok, so now that we've got the basics of inputs and outputs down, let's branch out to more ways to store information. remember a while back where we wanted to output hello world? well what if we want to store some words, like maybe your name, or the months, or anything random? the first step is to store one character of that word. to do that, we'll have to declare our variable as char instead of int, where char stands for character, obviously. so what characters can we actually store? let's test it out by writing some strange letters. é 你好 !!. there's charts available online of all the basic characters a char can store. it mostly encompasses the alphabet along with punctuation marks.
+
+
+now, there are four basic types in c++. there's the integer, the boolean, the character, and the float/double. an integer, as covered, stores an integer value. the boolean value stores a true or false value. we'll talk about why it's called a boolean in a second. a character stores a character. a double stores a real value, like a decimal point value like 2/ 3 or 10 / 3. we won't talk about doubles today, though; don't worry
+
+
+we can perform arithmetic with integers. test it out on replit!
+
+
+test out the other operations on replit, like add, subtract, multiply. note that when we write instructions, they happen in the order that we write them in. very intuitive, if I say so myself. so if we set a variable and then change it later, we won't be able to get that previous value back. unless we've stored it somehow
+
+
+we can also do mathematics with numbers, like adding 1 + 1 or 2 + 2. let's check if these values match the expected values. what happens when you divide 3 by 2? or maybe set a value to a decimal point like 1.1?
+
+
+now that we've learned how to do basic mathematics, let's move onto the next part of a program: making decisions. how do we do this? it's through if and else blocks! but first, to utilize an if else block, we'll first have to understand true and false values, which are the boolean values that I'd mentioned earlier.
+
+
+why is a true false value called a boolean? it's named after the inventor of boolean algebra; basically true and false math. in boolean math, a variable can only have two values: true or false. no other states are allowed; there are no maybes or percentages or anything of the sort.
+
+
+back to the if else block. the basic syntax is easy to understand. if the condition of the if block is met, then the code in the first block is executed. otherwise, the code in the else block is executed. that's why we call it a branch, since the program branches out to one of the two blocks
+
+
+what can our true/false values represent? they can represent many things. for example, maybe the true false value represents whether you're hungry or not. maybe the true or false value represents whether you want to go out tonight or not. a boolean value can have many meanings.
+
+
+not everything is a yes or no question. however, our program only understands yes or nos. the remember, a boolean value is necessarily either true or false, yes or no. you can't say maybe, like if a friend wants to go out. whenever an if else block comes up, you have to make the decision right then and there. so we have to make sure all of the decisions we want to make are yes/no. in other words, we have to reword our question somehow so that it can accept yes and no values. unfortunately, even the computer can't decide what to eat.
+
+
+in this case, we can go through a list of our favourite foods and see if any of them catches our eye. maybe if you had a car, you could go through a list of nearby restaurants and see whether or not their menu looks appealing. in short, making decisions is hard; it's one of the hardest parts about programming and in real life, so it's important to practice this.
+
+
+so far, we've only looked at the case where the if block is activated. however, it's possible that your initial condition is not true, in which case we'd go to the else block. it operates in the same way! put the instructions inside and they'll run as normal. it's just that in this case, everything in the 'if' block gets ignored.
+
+
+let's look at some questions where both the if and else cases are possible. for example, it's late at night and you want to check if your local mcdonalds is still open. if it's open, you might want to take a quick trip for some fries. but otherwise you'll have to prepare your own instant noodle packages. in short: you have to ensure that your plan is fail proof! prepare for all possibilities.
+
+
+so far, we've been looking at real life scenarios for these if and else blocks. but actually in most programs, we won't be asking the user directly the question. we'll be performing an analysis instead based on the information that we have already. this might consist of some integers, some characters, some float values, or anything else.
+
+
+in this case we have a simple program. it'll tell you whether you have enough cash to buy a product. if you have enough money, then you can go buy it; otherwise, you'll not be able to.
+
+
+in short, a boolean value is usually formed from three types of comparisons. larger than, less than, or equal to. of course, there's also larger than or equal to and etcetera, but you get the point. and of course, you can mix this with the previous types of arithmetic we've learned about in the past.
+
+
+loops are how we repeat instructions, and also the last thing we'll be learning today. it's useful to repeat our instructions because sometimes we don't know how many times the user wants to perform some task. for example, imagine we're building an online shopping website. we don't know how many items the user might want to buy today, so we'll have to allow them to add multiple items to their online cart. loops enable this type of behaviour from programs. today it'll just be while loops.
+
+
+if you look carefully, the syntax for the loop is quite similar to the if else block. first you have the keyword, while instead of if, but then you still have the same parenthesis and then condition. it works largely the same way as well. the while block will check the conditional at the start of every loop. if it's true, it'll repeat again and then check the conditional once the instructions in the block have been completed. it'll keep on repeating until it finds that the condition is not true, where it'll continue to the next set of instructions.
+
+
+you have to be careful when writing loops: sometimes, you might run into a problem called an infinite loop, where the conditional is never false and the program will be stuck in the loop forever.
